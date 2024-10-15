@@ -1,0 +1,289 @@
+{
+    "students": [
+        {
+            "id": "S001",
+            "name": "John Doe",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 85,
+                    "Science": 78,
+                    "English": 90,
+                    "Physics": 88,
+                    "Computer": 95,
+                    "Social Science": 80
+                }
+            }
+        },
+        {
+            "id": "S002",
+            "name": "Jane Smith",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 92,
+                    "Science": 80,
+                    "English": 85,
+                    "Physics": 89,
+                    "Computer": 94,
+                    "Social Science": 88
+                }
+            }
+        },
+        {
+            "id": "S003",
+            "name": "Michael Johnson",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 76,
+                    "Science": 72,
+                    "English": 78,
+                    "Physics": 80,
+                    "Computer": 85,
+                    "Social Science": 75
+                }
+            }
+        },
+        {
+            "id": "S004",
+            "name": "Emily Davis",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 89,
+                    "Science": 87,
+                    "English": 92,
+                    "Physics": 85,
+                    "Computer": 90,
+                    "Social Science": 91
+                }
+            }
+        },
+        {
+            "id": "S005",
+            "name": "David Brown",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 78,
+                    "Science": 74,
+                    "English": 80,
+                    "Physics": 76,
+                    "Computer": 82,
+                    "Social Science": 79
+                }
+            }
+        },
+        {
+            "id": "S006",
+            "name": "Lucy Green",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 83,
+                    "Science": 85,
+                    "English": 88,
+                    "Physics": 82,
+                    "Computer": 90,
+                    "Social Science": 85
+                }
+            }
+        },
+        {
+            "id": "S007",
+            "name": "Liam Wilson",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 77,
+                    "Science": 80,
+                    "English": 85,
+                    "Physics": 78,
+                    "Computer": 84,
+                    "Social Science": 82
+                }
+            }
+        },
+        {
+            "id": "S008",
+            "name": "Sophia Martinez",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 91,
+                    "Science": 86,
+                    "English": 93,
+                    "Physics": 88,
+                    "Computer": 94,
+                    "Social Science": 89
+                }
+            }
+        },
+        {
+            "id": "S009",
+            "name": "Oliver Hall",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 79,
+                    "Science": 73,
+                    "English": 81,
+                    "Physics": 76,
+                    "Computer": 84,
+                    "Social Science": 78
+                }
+            }
+        },
+        {
+            "id": "S010",
+            "name": "Isabella Lewis",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 93,
+                    "Science": 90,
+                    "English": 95,
+                    "Physics": 92,
+                    "Computer": 96,
+                    "Social Science": 91
+                }
+            }
+        },
+        {
+            "id": "S011",
+            "name": "Daniel King",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 78,
+                    "Science": 75,
+                    "English": 80,
+                    "Physics": 77,
+                    "Computer": 83,
+                    "Social Science": 79
+                }
+            }
+        },
+        {
+            "id": "S012",
+            "name": "Mia Scott",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 89,
+                    "Science": 85,
+                    "English": 92,
+                    "Physics": 87,
+                    "Computer": 90,
+                    "Social Science": 88
+                }
+            }
+        },
+        {
+            "id": "S013",
+            "name": "Ethan Lee",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 75,
+                    "Science": 72,
+                    "English": 78,
+                    "Physics": 74,
+                    "Computer": 80,
+                    "Social Science": 76
+                }
+            }
+        },
+        {
+            "id": "S014",
+            "name": "Charlotte Baker",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 93,
+                    "Science": 89,
+                    "English": 96,
+                    "Physics": 91,
+                    "Computer": 95,
+                    "Social Science": 92
+                }
+            }
+        },
+        {
+            "id": "S015",
+            "name": "Matthew Adams",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 85,
+                    "Science": 81,
+                    "English": 89,
+                    "Physics": 83,
+                    "Computer": 87,
+                    "Social Science": 85
+                }
+            }
+        },
+        {
+            "id": "S016",
+            "name": "Ava Campbell",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 90,
+                    "Science": 87,
+                    "English": 93,
+                    "Physics": 88,
+                    "Computer": 91,
+                    "Social Science": 89
+                }
+            }
+        },
+        {
+            "id": "S017",
+            "name": "Alexander Perez",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 78,
+                    "Science": 74,
+                    "English": 81,
+                    "Physics": 76,
+                    "Computer": 83,
+                    "Social Science": 79
+                }
+            }
+        },
+        {
+            "id": "S018",
+            "name": "Ella Hughes",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 92,
+                    "Science": 89,
+                    "English": 95,
+                    "Physics": 91,
+                    "Computer": 94,
+                    "Social Science": 93
+                }
+            }
+        },
+        {
+            "id": "S019",
+            "name": "Jacob Rivera",
+            "grade_history": {
+                "semester": "Fall 2022",
+                "subjects": {
+                    "Math": 88,
+                    "Science": 84,
+                    "English": 90,
+                    "Physics": 86,
+                    "Computer": 89,
+                    "Social Science": 87
+                }
+            }
+        }
+    ]
+}
