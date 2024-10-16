@@ -1,5 +1,5 @@
 //
-//  StudentGradeHistoryView.swift
+//  SingleSelectionTableView.swift
 //  TableExampleSwiftUI
 //
 //  Created by Divyesh Vekariya on 15/10/24.
@@ -7,35 +7,30 @@
 
 import SwiftUI
 
-struct StudentGradeHistoryView: View {
-
-    @State var viewModel: StudentGradeHistoryViewModel
-    @State private var sortOrder = [KeyPathComparator(\Student.name)]
-
+struct SingleSelectionTableView: View {
+    
+    @State var viewModel: SingleSelectionTableViewModel
+    
     var body: some View {
-        NavigationStack {
-            Table(
-                viewModel.students,
-                selection: $viewModel.selectedStudents,
-                sortOrder: $sortOrder,
-                columns: {
+        Group {
+            Table(viewModel.students,
+                  selection: $viewModel.selectedStudent,
+                  columns: {
                 TableColumn("Index") { student in
                     let index = (viewModel.students.firstIndex(
                         where: { $0.id == student
                             .id }) ?? 0)
                     Text("No. \(index + 1)")
                 }
-
+                
                 TableColumn("Id", value: \.id)
-
+                
                 TableColumn("Name", value: \.name)
                     .width(min: 150)
-
+                
                 TableColumn("Math") { student in
                     Text("\(student.gradeHistory.subjects.math)")
-                        .foregroundStyle(
-                            gradeColor(for: student.gradeHistory.subjects.math)
-                        )
+                        .foregroundStyle(gradeColor(for: student.gradeHistory.subjects.math))
                 }
                 TableColumn("Science") { student in
                     Text("\(student.gradeHistory.subjects.science)")
@@ -57,15 +52,9 @@ struct StudentGradeHistoryView: View {
                     Text("\(student.gradeHistory.subjects.socialScience)")
                         .foregroundStyle(gradeColor(for: student.gradeHistory.subjects.socialScience))
                 }
-                })
-            .tint(Color.purple.opacity(0.7))
-            .onChange(of: sortOrder) {
-                viewModel.students.sort(using: sortOrder)
-            }
-            .navigationTitle("Class 10th Grade")
-            .toolbar(content: {
-                EditButton()
             })
+            .tint(Color.purple.opacity(0.7))
+            .navigationTitle("Single Selection Table")
             .task {
                 await viewModel.fetchStudents()
             }
@@ -84,4 +73,3 @@ struct StudentGradeHistoryView: View {
         }
     }
 }
-

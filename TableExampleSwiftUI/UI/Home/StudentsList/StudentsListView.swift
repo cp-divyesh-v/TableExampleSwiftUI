@@ -25,8 +25,8 @@ struct StudentsListView: View {
                     }
                 }
             }
-            .listStyle(.plain)
-            .navigationTitle("Students")
+//            .listStyle(.plain)
+//            .navigationTitle("Students")
             .task {
                 await viewModel.fetchStudents()
             }

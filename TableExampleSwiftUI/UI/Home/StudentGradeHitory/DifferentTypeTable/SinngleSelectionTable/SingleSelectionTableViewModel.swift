@@ -1,5 +1,5 @@
 //
-//  StudentGradeHistoryViewModel.swift
+//  SingleSelectionTableView.swift
 //  TableExampleSwiftUI
 //
 //  Created by Divyesh Vekariya on 15/10/24.
@@ -8,10 +8,10 @@
 import Foundation
 
 @Observable
-class StudentGradeHistoryViewModel {
+class SingleSelectionTableViewModel {
     var students: [Student] = []
 
-    var selectedStudents: Set<Student.ID> = []
+    var selectedStudent: Student.ID?
 
     private let studentRepository: StudentRepository
 
