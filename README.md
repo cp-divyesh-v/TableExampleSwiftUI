@@ -52,7 +52,7 @@ The sorting feature makes it easier to find specific data and organize the table
 You can add **search and filtering** to allow users to quickly find specific students. By adding a search field, users can filter the table by student name, ID, or even by their grades in specific subjects. This improves the table's usability, especially when dealing with large datasets.
 
 <p align="center">
-    <img src =./docs/sorting_demo.gif" />
+    <img src =./TableExampleSwiftUI/docs/Assets/sorting_demo.gif" />
 </p>
 ---
 
@@ -61,7 +61,7 @@ You can add **search and filtering** to allow users to quickly find specific stu
 SwiftUI’s `Table` view allows for **multi-selection**, where users can select multiple rows at once. This is helpful when performing bulk actions, such as selecting several students to view or edit at once. For this, we bind the selection state to a set that tracks which students are selected.
 
 <p align="center">
-    <img src =./docs/multiple_selection_demo.gif" />
+    <img src =./TableExampleSwiftUI/docs/Assets/multiple_selection_demo.gif" />
 </p>
 ---
 
@@ -74,7 +74,7 @@ Sometimes, a single row of data doesn’t convey all the information we need. Us
 This feature is especially useful when displaying complex or large datasets where you want to keep the table tidy but still allow for deep dives into individual records.
 
 <p align="center">
-    <img src =./docs/expandable_row_demo.gif" />
+    <img src =./TableExampleSwiftUI/docs/Assets/expandable_row_demo.gif" />
 </p>
 ---
 
@@ -83,7 +83,7 @@ This feature is especially useful when displaying complex or large datasets wher
 To enhance the user experience, you can make the table **searchable**. This feature lets users search for a student by their name or ID, or even filter based on specific grade criteria (e.g., all students with a Math grade above 90). The `searchable` modifier is added to the table, providing real-time filtering of the rows based on the user’s input.
 
 <p align="center">
-    <img src =./docs/search_demo.gif" />
+    <img src =./TableExampleSwiftUI/docs/Assets/search_demo.gif" />
 </p>
 ---
 
@@ -170,12 +170,12 @@ Adding a context menu enhances user experience by:
 - Allowing users to manage student records intuitively and efficiently.
 
 <p align="center">
-    <img src =./docs/context_manu_desktop_demo.gif" />
+    <img src =./TableExampleSwiftUI/docs/Assets/context_manu_desktop_demo.gif" />
 </p>
 ---
 
 <p align="center">
-    <img src =./docs/context_manu_ipad_demo.gif" />
+    <img src =./TableExampleSwiftUI/docs/Assets/context_manu_ipad_demo.gif" />
 </p>
 
 ---
