@@ -1,9 +1,9 @@
 
 <img width="930" alt="mobile apps banner" src="https://github.com/canopas/rich-editor-swiftui/assets/73588408/84c94bbd-7952-45cb-9bfb-95e0687b37b0">
 
-# **Building a Student Table in SwiftUI**
+# **Creating Dynamic Table View in SwiftUI**
 
-![TableExampleSwiftUI (1)](https://github.com/canopas/rich-editor-swiftui/assets/73588408/8c3013ae-8a27-4ebc-a511-51e726825c4b)
+![TableExampleSwiftUI (1)](https://github.com/user-attachments/assets/9d54585b-462f-48e6-8856-f79747246eb9)
 
 In this tutorial, we will create a simple and functional table to display student data using SwiftUI's `Table` view. This component is ideal for showing data in a structured, row-and-column format and offers features like sorting, filtering, multi-selection, and more. Our table will focus on a list of students and their grades across various subjects.
 
@@ -51,19 +51,31 @@ The sorting feature makes it easier to find specific data and organize the table
 ### Filtering
 You can add **search and filtering** to allow users to quickly find specific students. By adding a search field, users can filter the table by student name, ID, or even by their grades in specific subjects. This improves the table's usability, especially when dealing with large datasets.
 
-<p align="center">
-    <img src =./TableExampleSwiftUI/docs/Assets/sorting_demo.gif" height="640" height="549" />
-</p>
+<table>
+  <tr>
+    <th width="100%" >Sortable Table</th>
+  </tr>
+  <tr align="center">
+    <td><p align="center">
+    <img src ="./docs/Assets/sorting_demo.gif" width="100%"/></td>
+  </tr>
+</table>
+
 ---
 
 ## **Step 4: Multi-Selection Support**
 
 SwiftUI’s `Table` view allows for **multi-selection**, where users can select multiple rows at once. This is helpful when performing bulk actions, such as selecting several students to view or edit at once. For this, we bind the selection state to a set that tracks which students are selected.
 
-<p align="center">
-    <img src =./TableExampleSwiftUI/docs/Assets/multiple_selection_demo.gif" height="640" />
-</p>
----
+<table>
+  <tr>
+    <th width="100%" >Multiple Selection Table</th>
+  </tr>
+  <tr align="center">
+    <td><p align="center">
+    <img src ="./docs/Assets/multiple_selection_demo.gif" width="70%"/></td>
+  </tr>
+</table>
 
 ---
 
@@ -73,18 +85,32 @@ Sometimes, a single row of data doesn’t convey all the information we need. Us
 
 This feature is especially useful when displaying complex or large datasets where you want to keep the table tidy but still allow for deep dives into individual records.
 
-<p align="center">
-    <img src =./TableExampleSwiftUI/docs/Assets/expandable_row_demo.gif" height="640" />
-</p>
+<table>
+  <tr>
+    <th width="100%" >Expandable Row Table</th>
+  </tr>
+  <tr align="center">
+    <td><p align="center">
+    <img src ="./docs/Assets/expandable_row_demo.gif" width="70%"/></td>
+  </tr>
+</table>
+
 ---
 
 ## **Step 6: Searchable Table**
 
 To enhance the user experience, you can make the table **searchable**. This feature lets users search for a student by their name or ID, or even filter based on specific grade criteria (e.g., all students with a Math grade above 90). The `searchable` modifier is added to the table, providing real-time filtering of the rows based on the user’s input.
 
-<p align="center">
-    <img src =./TableExampleSwiftUI/docs/Assets/search_demo.gif" height="640" />
-</p>
+<table>
+  <tr>
+    <th width="100%" >Seachable Table</th>
+  </tr>
+  <tr align="center">
+    <td><p align="center">
+    <img src ="./docs/Assets/search_demo.gif" width="70%"/></td>
+  </tr>
+</table>
+
 ---
 
 ## **Step 7: Adding a Context Menu**
@@ -169,19 +195,27 @@ Adding a context menu enhances user experience by:
 - Providing quick access to common actions without cluttering the interface.
 - Allowing users to manage student records intuitively and efficiently.
 
-<p align="center">
-    <img src =./TableExampleSwiftUI/docs/Assets/context_manu_desktop_demo.gif" height="549" />
-</p>
+<table>
+  <tr>
+    <th width="100%" >Context Manu in Desktop Table</th>
+  </tr>
+  <tr align="center">
+    <td><p align="center">
+    <img src ="./docs/Assets/context_manu_desktop_demo.gif" width="100%"/></td>
+  </tr>
+  <tr>
+    <th width="100%" >Context Manu in iPad Table</th>
+  </tr>
+  <tr align="center">
+    <td><p align="center">
+    <img src ="./docs/Assets/context_manu_ipad_demo.gif" width="70%"/></td>
+  </tr>
+</table>
 
-<p align="center">
-    <img src =./TableExampleSwiftUI/docs/Assets/context_manu_ipad_demo.gif" height="640" />
-</p>
+---
 
 ## **Conclusion**
 
 With the addition of a context menu, the `Student Table` becomes even more interactive and user-friendly. The combination of context menus with the robust features of SwiftUI's `Table` allows for a comprehensive data management tool that meets user needs efficiently.
 
 This feature, combined with sorting, filtering, and expandable rows, creates a powerful interface for managing student records in a streamlined manner. By incorporating context menus, you empower users to quickly access functionalities, making your SwiftUI application more intuitive and responsive.
-```
-
-Feel free to modify any parts of the Markdown to better suit your needs!
