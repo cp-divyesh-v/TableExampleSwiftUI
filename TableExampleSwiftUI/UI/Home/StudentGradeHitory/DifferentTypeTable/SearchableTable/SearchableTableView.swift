@@ -52,7 +52,7 @@ struct SearchableTableView: View {
                         .foregroundStyle(gradeColor(for: student.gradeHistory.subjects.socialScience))
                 }
             })
-            .searchable(text: $viewModel.searchText)
+            .searchable(text: $viewModel.searchText, prompt: "Search by Name id & grades")
             .tint(Color.purple.opacity(0.7))
             .navigationTitle("Searchable Table")
             .task {

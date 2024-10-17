@@ -32,7 +32,6 @@ struct StudentDetailView: View {
         }
         .listStyle(.plain)
         .navigationTitle(viewModel.student.name)
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

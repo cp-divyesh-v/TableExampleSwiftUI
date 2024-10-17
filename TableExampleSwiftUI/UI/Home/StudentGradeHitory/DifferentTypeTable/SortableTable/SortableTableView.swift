@@ -59,11 +59,6 @@ struct SortableTableView: View {
                   .onChange(of: sortOrder) {
                       viewModel.students.sort(using: sortOrder)
                   }
-#if os(iOS) || os(tvOS) || targetEnvironment(macCatalyst)
-                  .toolbar(content: {
-                      EditButton()
-                  })
-#endif
                   .navigationTitle("Sortable Table")
                   .task {
                       await viewModel.fetchStudents()

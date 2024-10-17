@@ -25,7 +25,6 @@ class SearchableTableViewModel {
                 "\(student.gradeHistory.subjects.socialScience)".contains(searchText)
             }
         }
-
         return data
     }
 
@@ -49,3 +48,5 @@ class SearchableTableViewModel {
         }
     }
 }
+
+

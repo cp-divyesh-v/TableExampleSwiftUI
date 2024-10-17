@@ -55,7 +55,7 @@ struct MultipleSelectionTableView: View {
             })
             .tint(Color.purple.opacity(0.7))
             .navigationTitle("Multi selection Table")
-#if os(iOS) || os(tvOS) || targetEnvironment(macCatalyst)
+#if os(iOS)
             .toolbar(content: {
                 EditButton()
             })

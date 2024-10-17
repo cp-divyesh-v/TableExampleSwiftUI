@@ -83,7 +83,7 @@ struct EverythingInOneTableView: View {
                         }
                     }
                 })
-            .searchable(text: $viewModel.searchText)
+            .searchable(text: $viewModel.searchText, prompt: "Search by Name id & grades")
             .tint(Color.purple.opacity(0.7))
             .onChange(of: sortOrder) {
                 viewModel._students.sort(using: sortOrder)
@@ -94,7 +94,7 @@ struct EverythingInOneTableView: View {
                 }
             })
             .navigationTitle("Final Table")
-#if os(iOS) || os(tvOS) || targetEnvironment(macCatalyst)
+#if os(iOS)
             .toolbar(content: {
                 EditButton()
             })
