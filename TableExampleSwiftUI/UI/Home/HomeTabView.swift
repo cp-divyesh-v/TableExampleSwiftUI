@@ -14,7 +14,7 @@ struct HomeTabView: View {
 
     var body: some View {
         TabView(selection: $viewModel.selectedTab) {
-            StudentGradeHistoryView(viewModel: StudentGradeHistoryViewModel())
+            TableTypeListView(viewModel: TableTypeListViewModel())
                 .tabItem {
                     Label("Grade History", systemImage: "book")
                 }

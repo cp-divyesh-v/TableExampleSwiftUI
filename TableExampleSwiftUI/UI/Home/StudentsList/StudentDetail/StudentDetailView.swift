@@ -32,8 +32,6 @@ struct StudentDetailView: View {
         }
         .listStyle(.plain)
         .navigationTitle(viewModel.student.name)
-        .navigationBarTitleDisplayMode(.inline)
-        .background(Color(UIColor.systemGroupedBackground).edgesIgnoringSafeArea(.all))
     }
 }
 
@@ -53,8 +51,9 @@ private struct StudentGradeListView: View {
                             GradeView(subject: "Social Science", grade: history.subjects.socialScience)
                         }
                         .padding()
-                        .background(Color(UIColor.secondarySystemBackground))
                         .cornerRadius(10)
+                        .background(Color.purple.opacity(0.05))
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
                         .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
                     } header: {
                         Text(history.semester)

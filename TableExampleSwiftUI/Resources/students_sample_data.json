@@ -13,7 +13,73 @@
                     "Computer": 95,
                     "Social Science": 80
                 }
-            }
+            },
+            "students": [
+                {
+                    "id": "SD04",
+                    "name": "Emily Davis",
+                    "grade_history": {
+                        "semester": "Fall 2022",
+                        "subjects": {
+                            "Math": 89,
+                            "Science": 87,
+                            "English": 92,
+                            "Physics": 85,
+                            "Computer": 90,
+                            "Social Science": 91
+                        }
+                    },
+                    "students": []
+                },
+                {
+                    "id": "SD05",
+                    "name": "David Brown",
+                    "grade_history": {
+                        "semester": "Fall 2022",
+                        "subjects": {
+                            "Math": 78,
+                            "Science": 74,
+                            "English": 80,
+                            "Physics": 76,
+                            "Computer": 82,
+                            "Social Science": 79
+                        }
+                    },
+                    "students": []
+                },
+                {
+                    "id": "SD06",
+                    "name": "Lucy Green",
+                    "grade_history": {
+                        "semester": "Fall 2022",
+                        "subjects": {
+                            "Math": 83,
+                            "Science": 85,
+                            "English": 88,
+                            "Physics": 82,
+                            "Computer": 90,
+                            "Social Science": 85
+                        }
+                    },
+                    "students": []
+                },
+                {
+                    "id": "SD07",
+                    "name": "Liam Wilson",
+                    "grade_history": {
+                        "semester": "Fall 2022",
+                        "subjects": {
+                            "Math": 77,
+                            "Science": 80,
+                            "English": 85,
+                            "Physics": 78,
+                            "Computer": 84,
+                            "Social Science": 82
+                        }
+                    },
+                    "students": []
+                }
+            ]
         },
         {
             "id": "S002",
@@ -28,7 +94,8 @@
                     "Computer": 94,
                     "Social Science": 88
                 }
-            }
+            },
+            "students": []
         },
         {
             "id": "S003",
@@ -43,7 +110,8 @@
                     "Computer": 85,
                     "Social Science": 75
                 }
-            }
+            },
+            "students": []
         },
         {
             "id": "S004",
@@ -58,7 +126,8 @@
                     "Computer": 90,
                     "Social Science": 91
                 }
-            }
+            },
+            "students": []
         },
         {
             "id": "S005",
@@ -73,7 +142,8 @@
                     "Computer": 82,
                     "Social Science": 79
                 }
-            }
+            },
+            "students": []
         },
         {
             "id": "S006",
@@ -88,7 +158,8 @@
                     "Computer": 90,
                     "Social Science": 85
                 }
-            }
+            },
+            "students": []
         },
         {
             "id": "S007",
@@ -103,7 +174,8 @@
                     "Computer": 84,
                     "Social Science": 82
                 }
-            }
+            },
+            "students": []
         },
         {
             "id": "S008",
@@ -118,7 +190,57 @@
                     "Computer": 94,
                     "Social Science": 89
                 }
-            }
+            },
+            "students": [
+                {
+                    "id": "SD09",
+                    "name": "Oliver Hall",
+                    "grade_history": {
+                        "semester": "Fall 2022",
+                        "subjects": {
+                            "Math": 79,
+                            "Science": 73,
+                            "English": 81,
+                            "Physics": 76,
+                            "Computer": 84,
+                            "Social Science": 78
+                        }
+                    },
+                    "students": []
+                },
+                {
+                    "id": "SD10",
+                    "name": "Isabella Lewis",
+                    "grade_history": {
+                        "semester": "Fall 2022",
+                        "subjects": {
+                            "Math": 93,
+                            "Science": 90,
+                            "English": 95,
+                            "Physics": 92,
+                            "Computer": 96,
+                            "Social Science": 91
+                        }
+                    },
+                    "students": []
+                },
+                {
+                    "id": "SD11",
+                    "name": "Daniel King",
+                    "grade_history": {
+                        "semester": "Fall 2022",
+                        "subjects": {
+                            "Math": 78,
+                            "Science": 75,
+                            "English": 80,
+                            "Physics": 77,
+                            "Computer": 83,
+                            "Social Science": 79
+                        }
+                    },
+                    "students": []
+                }
+            ]
         },
         {
             "id": "S009",
@@ -133,7 +255,8 @@
                     "Computer": 84,
                     "Social Science": 78
                 }
-            }
+            },
+            "students": []
         },
         {
             "id": "S010",
@@ -148,7 +271,8 @@
                     "Computer": 96,
                     "Social Science": 91
                 }
-            }
+            },
+            "students": []
         },
         {
             "id": "S011",
@@ -163,7 +287,8 @@
                     "Computer": 83,
                     "Social Science": 79
                 }
-            }
+            },
+            "students": []
         },
         {
             "id": "S012",
@@ -178,7 +303,8 @@
                     "Computer": 90,
                     "Social Science": 88
                 }
-            }
+            },
+            "students": []
         },
         {
             "id": "S013",
@@ -193,7 +319,8 @@
                     "Computer": 80,
                     "Social Science": 76
                 }
-            }
+            },
+            "students": []
         },
         {
             "id": "S014",
@@ -208,7 +335,8 @@
                     "Computer": 95,
                     "Social Science": 92
                 }
-            }
+            },
+            "students": []
         },
         {
             "id": "S015",
@@ -223,7 +351,8 @@
                     "Computer": 87,
                     "Social Science": 85
                 }
-            }
+            },
+            "students": []
         },
         {
             "id": "S016",
@@ -238,7 +367,8 @@
                     "Computer": 91,
                     "Social Science": 89
                 }
-            }
+            },
+            "students": []
         },
         {
             "id": "S017",
@@ -253,7 +383,8 @@
                     "Computer": 83,
                     "Social Science": 79
                 }
-            }
+            },
+            "students": []
         },
         {
             "id": "S018",
@@ -268,7 +399,41 @@
                     "Computer": 94,
                     "Social Science": 93
                 }
-            }
+            },
+            "students": [
+                {
+                    "id": "SD01",
+                    "name": "Alexander Perez",
+                    "grade_history": {
+                        "semester": "Fall 2022",
+                        "subjects": {
+                            "Math": 78,
+                            "Science": 74,
+                            "English": 81,
+                            "Physics": 76,
+                            "Computer": 83,
+                            "Social Science": 79
+                        },
+                    },
+                    "students": []
+                },
+                {
+                    "id": "SD02",
+                    "name": "Jacob Rivera",
+                    "grade_history": {
+                        "semester": "Fall 2022",
+                        "subjects": {
+                            "Math": 88,
+                            "Science": 84,
+                            "English": 90,
+                            "Physics": 86,
+                            "Computer": 89,
+                            "Social Science": 87
+                        }
+                    },
+                    "students": []
+                }
+            ]
         },
         {
             "id": "S019",
@@ -283,7 +448,8 @@
                     "Computer": 89,
                     "Social Science": 87
                 }
-            }
+            },
+            "students": []
         }
     ]
 }
