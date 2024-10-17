@@ -11,6 +11,10 @@ import SwiftUI
 class SortableTableViewModel {
 
     var students: [Student] = []
+    var sortOrder = [
+        KeyPathComparator(\Student.name),
+        KeyPathComparator(\Student.gradeHistory.subjects.math)
+    ]
 
     private let studentRepository: StudentRepository
 

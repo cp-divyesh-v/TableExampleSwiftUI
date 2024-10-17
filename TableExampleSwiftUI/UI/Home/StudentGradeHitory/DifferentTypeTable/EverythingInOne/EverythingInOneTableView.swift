@@ -10,15 +10,13 @@ import SwiftUI
 struct EverythingInOneTableView: View {
     
     @State var viewModel: EverythingInOneTableViewModel
-    ///Sorting Works only if we keep this variable in view it's fail if we move this to viewModel
-    @State private var sortOrder = [KeyPathComparator(\Student.name)]
-    
+
     var body: some View {
         Group {
             Table(
                 of: Student.self,
                 selection: $viewModel.selectedStudents,
-                sortOrder: $sortOrder,
+                sortOrder: $viewModel.sortOrder,
                 columns: {
                     TableColumn("Index") { student in
                         let index = (viewModel.students.firstIndex(
@@ -32,29 +30,29 @@ struct EverythingInOneTableView: View {
                     TableColumn("Name", value: \.name)
                         .width(min: 150)
                     
-                    TableColumn("Math") { student in
-                        Text("\(student.gradeHistory.subjects.math)")
-                            .foregroundStyle(gradeColor(for: student.gradeHistory.subjects.math))
+                    TableColumn("Math", value:\.gradeHistory.subjects.math) {
+                        Text("\($0.gradeHistory.subjects.math)")
+                            .foregroundStyle(gradeColor(for: $0.gradeHistory.subjects.math))
                     }
-                    TableColumn("Science") { student in
-                        Text("\(student.gradeHistory.subjects.science)")
-                            .foregroundStyle(gradeColor(for: student.gradeHistory.subjects.science))
+                    TableColumn("Science", value: \.gradeHistory.subjects.science) {
+                        Text("\($0.gradeHistory.subjects.science)")
+                            .foregroundStyle(gradeColor(for: $0.gradeHistory.subjects.science))
                     }
-                    TableColumn("English") { student in
-                        Text("\(student.gradeHistory.subjects.english)")
-                            .foregroundStyle(gradeColor(for: student.gradeHistory.subjects.english))
+                    TableColumn("English", value: \.gradeHistory.subjects.english) {
+                        Text("\($0.gradeHistory.subjects.english)")
+                            .foregroundStyle(gradeColor(for: $0.gradeHistory.subjects.english))
                     }
-                    TableColumn("Physics") { student in
-                        Text("\(student.gradeHistory.subjects.physics)")
-                            .foregroundStyle(gradeColor(for: student.gradeHistory.subjects.physics))
+                    TableColumn("Physics", value: \.gradeHistory.subjects.physics) {
+                        Text("\($0.gradeHistory.subjects.physics)")
+                            .foregroundStyle(gradeColor(for: $0.gradeHistory.subjects.physics))
                     }
-                    TableColumn("Computer") { student in
-                        Text("\(student.gradeHistory.subjects.computer)")
-                            .foregroundStyle(gradeColor(for: student.gradeHistory.subjects.computer))
+                    TableColumn("Computer", value: \.gradeHistory.subjects.computer) {
+                        Text("\($0.gradeHistory.subjects.computer)")
+                            .foregroundStyle(gradeColor(for: $0.gradeHistory.subjects.computer))
                     }
-                    TableColumn("Social Science") { student in
-                        Text("\(student.gradeHistory.subjects.socialScience)")
-                            .foregroundStyle(gradeColor(for: student.gradeHistory.subjects.socialScience))
+                    TableColumn("Social Science", value: \.gradeHistory.subjects.socialScience) {
+                        Text("\($0.gradeHistory.subjects.socialScience)")
+                            .foregroundStyle(gradeColor(for: $0.gradeHistory.subjects.socialScience))
                     }
                 }, rows: {
                     ForEach(viewModel.students) { student in
@@ -85,8 +83,8 @@ struct EverythingInOneTableView: View {
                 })
             .searchable(text: $viewModel.searchText, prompt: "Search by Name id & grades")
             .tint(Color.purple.opacity(0.7))
-            .onChange(of: sortOrder) {
-                viewModel._students.sort(using: sortOrder)
+            .onChange(of: viewModel.sortOrder) {
+                viewModel._students.sort(using: viewModel.sortOrder)
             }
             .navigationDestination(isPresented: $viewModel.showDetailScreen, destination: {
                 if let student = viewModel.destinationStudent {

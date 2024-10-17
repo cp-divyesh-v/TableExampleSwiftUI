@@ -28,6 +28,11 @@ class EverythingInOneTableViewModel {
 
         return data
     }
+    
+    var sortOrder = [
+        KeyPathComparator(\Student.name),
+        KeyPathComparator(\Student.gradeHistory.subjects.math)
+    ]
 
     var alertPrompt: AlertPrompt?
 
