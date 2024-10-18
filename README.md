@@ -1,9 +1,9 @@
 
 <img width="930" alt="mobile apps banner" src="https://github.com/canopas/rich-editor-swiftui/assets/73588408/84c94bbd-7952-45cb-9bfb-95e0687b37b0">
 
-# **Creating Dynamic Table View in SwiftUI**
+# **How to Create Interactive Table View in SwiftUI**
 
-![TableExampleSwiftUI (1)](https://github.com/user-attachments/assets/9d54585b-462f-48e6-8856-f79747246eb9)
+![TableExampleSwiftUI](https://github.com/user-attachments/assets/61a7f286-000b-4d0f-9cb3-1f3278cc02c3)
 
 In this tutorial, we will create a simple and functional table to display student data using SwiftUI's `Table` view. This component is ideal for showing data in a structured, row-and-column format and offers features like sorting, filtering, multi-selection, and more. Our table will focus on a list of students and their grades across various subjects.
 
